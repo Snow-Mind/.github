@@ -1,42 +1,54 @@
+<div align="center">
+
+<img src="snowmind-logo.png" alt="SnowMind" width="140" />
+
 # SnowMind ❄️
 
-**Put your USDC to work. An AI agent finds the best safe yield for you — automatically.**
+**Autonomous, non-custodial USDC yield on Avalanche.**
 
-SnowMind is a non-custodial yield optimizer on the **Avalanche C-Chain**. You deposit USDC, and an on-chain AI agent moves it to whichever trusted lending protocol is paying the best risk-adjusted return at that moment. You stay in full control of your money the whole time.
+Deposit USDC and an on-chain AI agent continuously rebalances it into the best risk-adjusted yield across Avalanche's leading lending protocols — within strict on-chain safety rules. You stay in full control of your funds at all times.
+
+[🌐 Website](https://snowmind.xyz) · [🚀 App](https://app.snowmind.xyz) · [📚 Docs](https://docs.snowmind.xyz) · [🚀 Launch post](https://x.com/snowmind_xyz/status/2060465962818887994) · [🐦 X](https://x.com/snowmind_xyz) · [💼 LinkedIn](https://www.linkedin.com/company/snowmindxyz/)
+
+</div>
 
 ---
 
-## What it does, in plain words
+## What SnowMind does
 
-- **You deposit USDC.** That's it — no complicated setup.
-- **An AI optimizer watches the market** and parks your funds where the yield is best *and* safe.
-- **It rebalances for you** as rates change across protocols, so you don't have to chase yield manually.
-- **You can withdraw anytime.** Every withdrawal needs a fresh signature from *your* wallet — nobody else can move your money.
+- **You deposit USDC.** No complex setup, no manual yield-chasing.
+- **An AI optimizer continuously routes your funds** to whichever trusted protocol offers the best risk-adjusted return at that moment.
+- **It rebalances automatically** as rates shift across protocols.
+- **You can withdraw anytime.** Every withdrawal requires a fresh signature from *your* wallet — no other party can ever move your money.
 
-## Where your money goes
+## Where funds go
 
-SnowMind only routes funds to well-known Avalanche lending protocols:
+SnowMind only routes capital to established Avalanche lending protocols:
 
 **Aave V3 · Spark · Euler V2 · Silo · Benqi**
 
-Before sending funds anywhere, it health-checks each protocol (utilization, TVL, rate stability, de-peg detection) and weights the yield by risk. If a protocol looks unhealthy, it's skipped — and SnowMind can emergency-exit a protocol entirely if something goes wrong.
+Before any allocation, each protocol is health-checked (utilization, TVL, rate stability, de-peg detection) and its yield is weighted by risk. Unhealthy protocols are skipped, and SnowMind can emergency-exit a protocol entirely the moment something looks wrong.
 
-## Why it's safe
+## Security
 
 - **Non-custodial** — your wallet always owns the funds. SnowMind never holds your keys.
-- **You own your smart account** — each user gets their own ZeroDev smart account.
-- **Limited permissions** — the agent can *only* deposit, rebalance, or return funds to you. It can't send your money anywhere else.
-- **All-or-nothing moves** — every rebalance happens in one atomic on-chain transaction. Funds never get stuck halfway.
-- **Always watched** — daily balance reconciliation, operator kill switches, and real-time alerts on every important event.
+- **Your own smart account** — each user gets a dedicated ZeroDev smart account.
+- **Scoped permissions** — the agent can *only* deposit, rebalance, or return funds to you. It cannot send your money anywhere else.
+- **Atomic moves** — every rebalance executes in a single all-or-nothing on-chain transaction. Funds never get stuck mid-move.
+- **Always monitored** — daily on-chain reconciliation, operator kill switches, and real-time alerts on every critical event.
 
-> The only risk to your USDC is the normal risk of the underlying lending protocols — the same risk you'd take depositing into them yourself. SnowMind doesn't add new risk; it just finds you the best safe yield within strict rules.
+> The only risk to your USDC is the inherent risk of the underlying lending protocols — the same exposure you'd take depositing into them directly. SnowMind adds no new risk; it routes you to the best risk-adjusted yield within strict guardrails.
+
+## 🛡️ Audited
+
+SnowMind's smart account architecture and backend have been security-audited by **[Firepan](https://firepan.com/)**.
 
 ## Fees
 
 - **During beta: 0 fees.** You keep 100% of your yield.
-- **Later: 10% of profit only** — never on your principal, and never on a loss.
+- **Later: 10% of profit only** — never on principal, and never on a loss.
 
-## How it's built
+## Built with
 
 | Part | Tech |
 |---|---|
@@ -45,17 +57,13 @@ Before sending funds anywhere, it health-checks each protocol (utilization, TVL,
 | Execution | Node.js + ERC-4337 account abstraction (ZeroDev + Pimlico) |
 | Chain | Avalanche C-Chain (`43114`) |
 
----
+## Backed & supported by
 
-## Links
-
-| | |
-|---|---|
-| 🌐 Website | <https://snowmind.xyz> |
-| 🚀 App | <https://app.snowmind.xyz> |
-| 📚 Docs | <https://docs.snowmind.xyz> |
-| 🐦 Twitter / X | <https://x.com/snowmind_xyz> |
+- **[Avalanche](https://www.avax.network/)** ([@avax](https://x.com/avax)) — built on the Avalanche C-Chain
+- **Team1 USA**
 
 ---
 
+<div align="center">
 <sub>SnowMind is a non-custodial DeFi application. Using DeFi protocols carries risk; please do your own research. Nothing here is financial advice.</sub>
+</div>
